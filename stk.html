@@ -44,32 +44,87 @@
         <nav id="menu">
             <h2>Menu</h2>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="generic.html">Ipsum veroeros</a></li>
-                <li><a href="generic.html">Tempus etiam</a></li>
-                <li><a href="generic.html">Consequat dolor</a></li>
-                <li><a href="elements.html">Elements</a></li>
+                <li><a href="index.html">Home</a></li> <!-- Need to make a page for contact info and bio-->
+                <li><a href="generic.html">Background</a></li>
+                <li><a href="generic.html">Contact Me</a></li>
+                <li><a href="generic.html">Publications</a></li>
             </ul>
         </nav>
 
         <!-- Main -->
         <div id="main">
             <div class="inner">
-                <h1>Test Bed Gantry</h1>
-                <img src="images/gantryCAD.png" width="600" height="500">
+                <h1>Ansys STK</h1>
+                <h1 style="font-size: 20pt;">Overview</h1>
+                <p>This STK analysis was used to calculate the link budget of a hypothetical data relay Satellite
+                    constellation. There were two objectives. The first was to compare two different types of
+                    photodetectors in the receivers to determine which one fits the mission objective better.
+                    The second is To compare four different optical lasers and compare how different power inputs and
+                    data rates affect the link budget’s
+                    bandwidth, signal to noise ratio, and calculated data rate. The following picture shows a legend
+                    of the simulation set up.
 
-                <p>Attached above is the CAD assembly I created for a gantry for the float table test Bed
-                    at my research lab. There is an acrylic cover on the front I manufactured so if there are
-                    any air compression explosions lab members will be safe. The gantry also holds a camera at the
-                    top which is used to determine the position of the float bots on the table. This test table is
-                    used to simulate microgravity conditions for space robotics projects including REAACH. </p>
-                <p>The CAD assembly was used for a few purposes. One it was used to determine the cost and which
-                    parts are necessary for the gantry. It was also used to determine the dimensions of specific
-                    parts like the acrylic cover which made assembly easier.
+
                 </p>
-                <p>I was a part of the assembly team putting together this gantry including cutting the
-                    80/20, tapping the insides of the 80/20 and putting it together. In the future there is a plan
-                    to add stepper motors to the gantry to add more degrees of freedom to testing on this table. </p>
+                <img src="images/stkLegend.jpg" width="600" height="400">
+                <h1 style="font-size: 20pt;">Requirements and considerations</h1>
+
+                <body>
+                    <h2>Transmitter Requirements</h2>
+                    <ul>
+                        <li>Data rate &gt; 1 Gb/s</li>
+                        <li>Used for space mission i.e. TRL 9</li>
+                        <li>Range &gt; 73400 km</li>
+                        <li>Lifetime &gt; 10 years</li>
+                        <li>Data rate &gt; 1.8 Gb/s</li>
+                        <li>Large functional temperature range</li>
+                        <li>Low cost</li>
+                        <li>Low mass and size</li>
+                        <li>Precise pointing requirements for longer range</li>
+                        <li>High jitter control</li>
+                    </ul>
+                </body>
+
+                <body>
+                    <h2>Receiver Requirements</h2>
+                    <ul>
+                        <li>Data rate &gt; 1 Gb/s</li>
+                        <li>Used for space mission i.e. TRL 9</li>
+                        <li>Low mass and size</li>
+                        <li>Range &gt; 73400 km</li>
+                        <li>Lifetime &gt; 10 years</li>
+                        <li>Minimal power since there will be 10 per satellite</li>
+                        <li>Large functional temperature range</li>
+                        <li>Low cost</li>
+                        <li>High jitter control</li>
+                        <li>Precise pointing requirements for longer range</li>
+                    </ul>
+                </body>
+                <h1 style="font-size: 20pt;">Objects and Assumptions</h1>
+                <img src="images/stkAssumptions.jpg" width="900" height="400">
+                <p>Additional Note: Receiver and transmitter specs are based off the actual receivers and transmitters.
+                    The sensor is based
+                    off the half-cone angle of an optical laser which is 1 degree. The satellite is roughly based of the
+                    TRDS-13, but the
+                    specs are so different (optical vs RF) that a custom satellite was used instead. The orbit
+                    simulation time is 24 hours.
+                </p>
+                <h1 style="font-size: 20pt;">Receiver Trade Study</h1>
+                <img src="images/recTradeStudy.jpg" width="900" height="400">
+
+                <h1 style="font-size: 20pt;">Transmitter Trade Study</h1>
+                <img src="images/tranTradeStudy.jpg" width="900" height="400">
+
+                <h1 style="font-size: 20pt;">Data Rates and Results</h1>
+                <img src="images/dataRate.jpg" width="900" height="400">
+
+                <h1 style="font-size: 20pt;">Link Budget</h1>
+                <img src="images/linkBudget.jpg" width="900" height="400">
+
+                <h1 style="font-size: 20pt;">Works Cited</h1>
+                <img src="images/stkSources.jpg" width="900" height="400">
+
+
             </div>
         </div>
 
